@@ -16,7 +16,7 @@ size=int(input("enter list size"))
 l=[]
 print("enter list elements")
 for i in range(0,size):
-    temp=int(input())
-    l.append(temp)
+    l.append(int(input()))
+   
 ans=selection_sort(l)
 print(ans)
