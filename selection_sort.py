@@ -1,15 +1,13 @@
 
 #python program for selection sort
-
 def selection_sort(l):
     for i in range(0,len(l)-1):
-        small=l[i]
+        temp=i
         
         for j in range(i,len(l)):#find the minimum value n list
-            if l[j]<small:
-                small=l[j]
-        index=l.index(small)
-        (l[i],l[index])=(l[index],l[i])  #swap elements
+            if l[j]<l[temp]:
+                temp=j
+        (l[i],l[temp])=(l[temp],l[i])  #swap elements
     
     return(l)
 
